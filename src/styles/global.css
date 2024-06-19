@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Spline+Sans:wght@300..700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,4 +9,50 @@ body {
   padding: 0;
   background: black;
   color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400-800 */
+  font-weight: 500;
+  font-style: normal;
+}
+
+p {
+  font-family: "Spline Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* Font weight: 300-700 */
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spline-sans-uniquifier {
+  font-family: "Spline Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 300-700 */
+  font-weight: 500;
+  font-style: normal;
+}
+
+.eb-garamond-uniquifier {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 400-800 */
+  font-weight: 600;
+  font-style: normal;
 }

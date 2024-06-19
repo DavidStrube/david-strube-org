@@ -6,11 +6,10 @@ import MySiteLayout from "../layouts/MySiteLayout.astro"
   <header>
     <div class="header__text-wrapper">
       <div class="header___text-wrapper__inner-wrapper">
-        <h1>Hello Dave</h1>
-        <h2>Up and running</h2>
+        <h1>Hello<br>Dave</h1>
       </div>
     </div>
-    <div class="header__image-wrapper"> <img src="src/assets/profile.jpeg" alt=""></div>
+    <div class="header__image-wrapper"> <img class="profile-image" src="src/assets/profile.jpeg" alt=""></div>
   </header>
 
 </MySiteLayout>
@@ -18,16 +17,13 @@ import MySiteLayout from "../layouts/MySiteLayout.astro"
 <style>
   header {
     display: flex;
+    gap: 2.5rem;
+    padding: 5rem;
   }
 
   header > div {
     flex: 1 1 50%;
-  }
 
-  .header__image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    display: block;
   }
 
   .header__text-wrapper {
@@ -36,15 +32,50 @@ import MySiteLayout from "../layouts/MySiteLayout.astro"
     justify-content: center;
   }
 
-  .header___text-wrapper__inner-wrapper h1 {
-
+  h1 {
     font-size: 5rem;
+  }
+
+  .header__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+
+  .profile-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 70vh;
+    height: auto;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    header {
+      padding: 3rem;
+      gap: 1.5rem;
+    }
 
   }
 
-  .header___text-wrapper__inner-wrapper h2 {
+  @media screen and (max-width: 500px) {
 
-    font-size: 2rem;
+    h1 {
+      font-size: 2rem;
+    }
 
-  }
+    header {
+      padding: 2rem;
+      gap: 1rem;
+    }
+
+
+
+}
 </style>
