@@ -1,5 +1,6 @@
 ---
-import MySiteLayout from "../layouts/MySiteLayout.astro"
+import MySiteLayout from "../layouts/MySiteLayout.astro";
+import profileImg from "../assets/profile.jpeg";
 ---
 <MySiteLayout pageTitle="David Strube Org"> 
 
@@ -9,7 +10,7 @@ import MySiteLayout from "../layouts/MySiteLayout.astro"
         <h1>Hello<br>Dave</h1>
       </div>
     </div>
-    <div class="header__image-wrapper"> <img class="profile-image" src="src/assets/profile.jpeg" alt=""></div>
+    <div class="header__image-wrapper"> <img class="profile-image" src={profileImg.src} alt="" /></div>
   </header>
 
 </MySiteLayout>
